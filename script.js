@@ -32,9 +32,9 @@ quoteInputElement.addEventListener('input', () => {
 })
 
 function getRandomQuote() {
-  return fetch(RANDOM_QUOTE_API_URL)
-    .then(response => response.json())
-    .then(data => data.content)
+  const items = ["a","b","c"];
+  const random = Math.floor(Math.random() * list.length);
+  return items[random];
 }
 
 async function renderNewQuote() {
