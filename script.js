@@ -1,4 +1,4 @@
-const items = ["#include <iostream>\nusing namespace std;\nint main() {\nint a ;\nint b ;\ncin>>a>>b;\ncout<<a+b;\nreturn 0;\n}","#include <iostream>\nusing namespace std;\nint main() {\nint a ;\ncin>>a;\nif(a%2 == 0)\ncout<<”even”;\nelse cout<<”odd”;\nreturn 0;\n}","#include <iostream>\nusing namespace std;\nint main() {\nint a;\ncin>>a;\nif(a%2 == 0)\ncout<<\"even\";\nelse cout<<\"odd\";\nreturn 0;\n}","#include <iostream>\nusing namespace std;\nint main() {\nstring str;\ncin>>str;\nint count = 0;\nfor(int i = 0;str[i];i++) count++;\ncout<<count;"];
+const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random'
 const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timerElement = document.getElementById('timer')
@@ -24,16 +24,18 @@ quoteInputElement.addEventListener('input', () => {
     } else {
       characterSpan.classList.remove('correct')
       characterSpan.classList.add('incorrect')
-      correct = false
     }
   })
 
-  if (correct) renderNewQuote()
+  if (correct) { 
+    renderNewQuote()
+  } 
 })
 
 function getRandomQuote() {
-  var random = Math.floor(Math.random() * items.length)
-  return items[random];
+  return fetch(RANDOM_QUOTE_API_URL)
+    .then(response => response.json())
+    .then(data => data.content)
 }
 
 async function renderNewQuote() {
