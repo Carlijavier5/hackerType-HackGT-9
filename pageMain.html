@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleMain.css">
+  <title>Typing effect</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+    .blink {
+      animation: blink-animation 2s steps(5, start) infinite;
+      -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+  </style>
+
+
+</head>
+<body>
+
+
+
+  <script src="mainPageControl.js"></script>
+  <div class="headerThing">
+    <h1><span class="material-symbols-outlined">keyboard</span>hackerType</h1>
+  </div>
+
+
+
+  <div class="container">
+    <h1>practice syntax for <span class="auto-type"></span></h1>
+  </div>
+
+  <div class="descThing">
+    <h2><span class="blink">(press any key to start)</span></h2>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script> 
+    var typed = new Typed(".auto-type", {
+      strings: ["Pascal", "LOLCODE", "LISP", "Lua", "B", "Python", "GolfScript", "HolyC", "COBOL", "Fortran", "Java"],
+      typeSpeed: 150,
+      backSpeed: 170,
+      backDelay: 1000,
+      loop: true,
+      shuffle: true,
+      showCursor: true
+    })
+  </script>
+</body>
+</html>
