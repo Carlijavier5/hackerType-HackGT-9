@@ -1,4 +1,4 @@
-const RANDOM_QUOTE_API_URL = 'http://api.quotable.io/random'
+const items = ["#include <iostream>\nusing namespace std;\nint main() {\nint a ;\nint b ;\ncin>>a>>b;\ncout<<a+b;\nreturn 0;\n}"];
 const quoteDisplayElement = document.getElementById('quoteDisplay')
 const quoteInputElement = document.getElementById('quoteInput')
 const timerElement = document.getElementById('timer')
@@ -32,9 +32,8 @@ quoteInputElement.addEventListener('input', () => {
 })
 
 function getRandomQuote() {
-  return fetch(RANDOM_QUOTE_API_URL)
-    .then(response => response.json())
-    .then(data => data.content)
+  var random = Math.floor(Math.random() * items.length)
+  return items[random];
 }
 
 async function renderNewQuote() {
