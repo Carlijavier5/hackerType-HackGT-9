@@ -38,6 +38,18 @@ body {
     color: white; 
     margin-left: calc(1rem + 2px); 
     margin-right: calc(1rem+2px);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+key {
+    color: #4ffc91f6;
+    font-weight: bolder;
+}
+
+.item-display {
+    display: flex;
 }
 
 .quote-input { 
@@ -55,15 +67,28 @@ body {
     border-radius: .5rem; 
     font-family: 'Cascade Mono', 'Courier'; 
     font-size: 20px; 
-    color: #4ffc91f6;
+    color: #222222;
     opacity: 0.3; 
-    caret-color: #4ffc91f6; 
+    caret-color: #222222;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */ 
+
+    
 }
+
+.quote-input::-webkit-scrollbar {
+    display: none;
+  }
+
 
 .quote-input focus { 
     margin-top: 5rem; 
     margin-bottom: 5rem; 
     opacity: .8; 
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 
 @keyframes TransitioningBackground { 
@@ -118,4 +143,3 @@ body {
     animation: TransitioningBackground 0.6s ease;
     transition: 0.6s;
   }
-

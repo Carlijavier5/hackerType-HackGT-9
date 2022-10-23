@@ -7,7 +7,7 @@
 
 .headerThing h1{
     color: aliceblue;
-    background: #333333;
+    background: #222222;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +22,7 @@
 .text-select {
     width: 100%;
     height: 10vh;
-    background: #333333;
+    background: #222222;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     font-size: 6vh;
@@ -47,7 +47,7 @@ key {
 }
 
 .buttons {
-    background-color: #333333;
+    background-color: #222222;
     align-items: top;
     justify-content: center;
     text-align: center;
@@ -76,7 +76,7 @@ key {
 
 .acontainer {
     padding-top: 2.5vh;
-    background-color: #333333;
+    background-color: #222222;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -94,7 +94,7 @@ key {
 .intro {
     width: 100%;
     height: 35vh;
-    background-color: #333333;
+    background-color: #222222;
     align-items: top;
     justify-content: center;
     text-align: center;

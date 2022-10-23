@@ -7,7 +7,7 @@
 
 .headerThing h1{
     color: aliceblue;
-    background: #333333;
+    background: #222222;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
 .container {
     width: 100%;
     height: 80vh;
-    background: #333333;
+    background: #222222;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
@@ -41,7 +41,7 @@
 .descThing h2 {
     color: rgba(240, 248, 255, 0.466);
     font-size: medium;
-    background: #333333;
+    background: #222222;
     display: flex;
     align-items: center;
     justify-content: center;
