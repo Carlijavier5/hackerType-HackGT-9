@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styleOther.css">
+  <title>Typing effect</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+ <style>
+    .blink {
+        animation: blink-animation 2s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+    @keyframes blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    @-webkit-keyframes blink-animation {
+        to {
+        visibility: hidden;
+        }
+    }
+</style>
+</head>
+<body>
+  <script src="mainPageControl.js"></script>
+  <div class="headerThing">
+    <h1><key class="material-symbols-outlined">keyboard</key>hackerType</h1>
+  </div>
+  <div class="text-select">
+    <p class = "mode"><span class="blink">{Select your mode}</span></p>
+  </div>
+  <div class="buttons">
+    <button class="btn" type="button" onclick="index.html">[hackerType]</button>
+    <button class="btn" type="button" onclick="index.html">[quoteType]</button>
+  </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.headerThing h1{
+    color: aliceblue;
+    background: #333333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-right: 55%;
+}
+
+.mode {
+    opacity: 0.5;
+}
+
+.text-select {
+    width: 100%;
+    height: 10vh;
+    background: #333333;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-weight: 600;
+    padding-top: 8%;
+    padding-bottom: 10%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+span {
+    color: aliceblue;
+    font-weight: bolder;
+}
+
+key {
+    color: #4ffc91f6;
+    font-weight: bolder;
+}
+
+.buttons {
+    background-color: #333333;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    height: 55vh;
+    width: 100%;
+}
+.btn {
+    background-color: transparent;
+    opacity: 0.9;
+    size: 10vh;
+    color: white;
+    font-size: 8vh;
+    padding: 7vh;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+  }
+  .btn:hover {
+    animation-timing-function: ease-in;
+    color: #4ffc91f6;
+    animation: TransitioningBackground 0.6s ease;
+    transition: 0.6s;
+  }
