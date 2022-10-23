@@ -30,8 +30,8 @@
     align-items: top;
     justify-content: center;
     font-weight: 600;
-    padding-top: 8%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     padding-left: 20%;
     padding-right: 20%;
 }
@@ -51,7 +51,7 @@ key {
     align-items: top;
     justify-content: center;
     text-align: center;
-    height: 55vh;
+    height: 20vh;
     width: 100%;
 }
 .btn {
@@ -66,9 +66,43 @@ key {
     border-radius: 5px;
     font-weight: 600;
   }
-  .btn:hover {
+.btn:hover {
     animation-timing-function: ease-in;
     color: #4ffc91f6;
     animation: TransitioningBackground 0.6s ease;
     transition: 0.6s;
-  }
+}
+
+.acontainer {
+    padding-top: 2.5vh;
+    background-color: #333333;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 15vh;
+    width: 100%;
+}
+
+.arrows {
+    width: 50vh;
+    padding-inline: 20vh;
+    transform: rotate(270deg);
+    filter: opacity(0.5) drop-shadow(0 0 white);
+}
+
+.intro {
+    width: 100%;
+    height: 35vh;
+    background-color: #333333;
+    align-items: top;
+    justify-content: center;
+    text-align: center;
+    size: 10vh;
+}
+
+.text-intro {
+    color: white;
+    font-size: 8vh;
+    font-weight: 600;
+    opacity: 0.5;
+}
