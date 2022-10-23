@@ -25,7 +25,7 @@
     background: #333333;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 8vh;
+    font-size: 6vh;
     display: flex;
     align-items: top;
     justify-content: center;
@@ -60,7 +60,8 @@ key {
     size: 10vh;
     color: white;
     font-size: 8vh;
-    padding: 7vh;
+    padding-inline: 7vh;
+    padding-top: 6vh;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -84,10 +85,10 @@ key {
 }
 
 .arrows {
-    width: 50vh;
-    padding-inline: 20vh;
-    transform: rotate(270deg);
+    width: 46vh;
+    padding-inline: 19.5vh;
     filter: opacity(0.5) drop-shadow(0 0 white);
+    transform: rotate(40deg);
 }
 
 .intro {
@@ -102,7 +103,12 @@ key {
 
 .text-intro {
     color: white;
-    font-size: 8vh;
+    font-size: 5vh;
     font-weight: 600;
+    padding-top: 4vh;
     opacity: 0.5;
+}
+
+#a {
+    transform: scaleX(-1) rotate(40deg);;
 }
