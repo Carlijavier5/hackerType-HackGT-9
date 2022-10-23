@@ -1,7 +1,7 @@
 const items = [
               "public class Example {\npublic static void main(String[] args) {\nSystem.out.println(\"Hey there\");\n}\n}",
               "int number = 1;\n\nwhile (true) {\nSystem.out.println(number);\nif (number >= 5) {\nbreak;\n}\nnumber = number + 1;\n}",
-              "import java.util.*;\npublic class ListExample1{\npublic static void main(String args[]){\nList<String> list=new ArrayList<String>();\nlist.add(\"Mango\")",
+              "import java.util.*;\npublic class ListExample{\npublic static void main(String args[]){\nList<String> list=new ArrayList<String>();\nlist.add(\"Mango\")",
               "num = 8\nnum_sqrt = num ** 0.5\nprint('The square root of %0.3f is %0.3f'%(num ,num_sqrt))",
               "a = 5\nb = 6\nc = 7\n\ns = (a + b + c) / 2\n\narea = (s*(s-a)*(s-b)*(s-c)) ** 0.5",
               "my_string = 'deepak'\nmy_tuple = (1,2,3,4)\nprint('name in a list: ', list(mystring))\nprint('numbers in a list: ', list(mytuple))",
