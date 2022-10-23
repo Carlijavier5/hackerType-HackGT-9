@@ -1,1 +1,2 @@
-# I have no clue what I am doing
+# hackerType
+a typing game built to help you learn programming syntax.
