@@ -1,4 +1,4 @@
 # hackerType
-A typing game built to help you learn programming syntax.
+A typing game to test and improve your typing speed
 
-# Please open pageMain.html to access the website as intended.
+# Please open pageMain.html to access the website as intended
